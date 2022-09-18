@@ -6,6 +6,7 @@ const CTA = () => {
             <a 
                 href="https://github.com/lodsdev" 
                 className="btn btn-primary"
+                target="_blank"
             >
                 My projects
             </a>

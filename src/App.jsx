@@ -1,12 +1,12 @@
 import React from 'react'
-import Nav from './components/nav/Nav'
 import Header from './components/header/Header'
 
 const App = () => {
     return (
         <>
-            <Header />
-            <Nav />
+            <div className="gradient-bg-welcome">
+                <Header />
+            </div>
         </>
     )
 }
