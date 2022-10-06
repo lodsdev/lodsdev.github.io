@@ -47,8 +47,6 @@ body {
 }
 
 .gradient-bg-welcome {
-    /* width: 100vh; */
-    /* height: 100vh; */
     background:
         radial-gradient(at 0% 0%, hsla(253, 16%, 7%, 1), transparent 50%),
         radial-gradient(at 50% 0%, hsla(225, 39%, 30%, 1), transparent 50%),
@@ -111,25 +109,4 @@ img {
     display: block;
     width: 100%;
     object-fit: cover;
-}
-
-
-@media screen and (max-width: 1024px) {
-    .container {
-        width: var(--container-width-md);
-    }
-    
-    section {
-        margin-top: 6rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .container {
-        width: var(--container-width-sm);
-    }
-    
-    section > h2 {
-        margin-bottom: 2rem;
-    }
 }

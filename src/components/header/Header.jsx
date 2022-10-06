@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.css'
-import CTA from './CTA'
+// import CTA from './CTA'
 import ME from '../../assets/images/el-retrato-de-dorian-gray-2.jpg'
 import HeaderSocial from './HeaderSocial'
 
@@ -12,9 +12,7 @@ const Header = () => {
                 <h1>LODS</h1>
                 <h4 className="text-light">Engineer Software and Full-stack Developer</h4>
 
-                <CTA/>
-
-                <HeaderSocial/>
+                {/* <CTA/> */}
 
                 <div className="me">
                     <img 
@@ -23,6 +21,8 @@ const Header = () => {
                         className="img-me"
                     />
                 </div>
+
+                <HeaderSocial/>
             </div>
         </header>
     )

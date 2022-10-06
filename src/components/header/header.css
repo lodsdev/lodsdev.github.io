@@ -1,40 +1,45 @@
 header {
     height: 100vh;
-    padding-top: 7rem;
     overflow: hidden;
 }
 
 .header-container {
     text-align: center;
-    height: 100%;
     position: relative;
-}
+    
+    height: 100%;
 
-.cta {
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
+    background-color: rgba(255, 0, 0, .5);
+    padding-top: 7rem;
 }
 
 .header-socials {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
     align-items: center;
     gap: 0.8rem;
     
-    position: absolute;
     left: 0;
     bottom: 0;
+    padding-top: 10rem;
 
     font-size: 1.5rem;
 }
 
-.header-socials::after{
-    content: '';
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
+.me {
+    width: 13rem;
+    height: 13rem;
+    left: calc(50% - (13rem / 2));
+    margin-top: 4rem;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
 }
 
 .img-me {
@@ -43,61 +48,4 @@ header {
     border-radius: 50%;
     border: 0.3rem solid var(--color-primary);
     padding: 0.25rem;
-}
-
-.me {
-    width: 13rem;
-    height: 13rem;
-    position: absolute;
-    left: calc(50% - (13rem / 2));
-    margin-top: 4rem;
-    overflow: hidden;
-}
-
-@media screen and (min-width: 1024px) {
-    header {
-        transition: var(--transition);
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    header {
-        transition: var(--transition);
-        height: 80vh;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    header {
-        height: 100vh;
-    }
-
-    .header-socials {
-        width: 100%;
-        
-        flex-direction: row;
-        
-        gap: 2rem;
-        justify-content: center;
-        align-items: center;
-
-        bottom: 3rem;
-        font-size: 2rem;
-    }
-    
-    .header-socials::after {
-        display: none;
-    }
-}
-
-@media screen and (max-height: 700px) {
-    header {
-        height: 120vh;
-    }
-}
-
-@media screen and (min-height: 700px) and (max-height: 770px) {
-    header {
-        height: 105vh;
-    }
 }
