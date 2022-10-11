@@ -7,9 +7,9 @@ header {
     text-align: center;
     position: relative;
     
-    height: 100%;
+    height: 100vh;
 
-    /* background-color: rgba(255, 0, 0, .5); */
+    background-color: rgba(255, 0, 0, .5);
     padding-top: 7rem;
 }
 
@@ -25,6 +25,7 @@ header {
     padding-top: 10rem;
 
     font-size: 1.5rem;
+    transition: all .2s;
 }
 
 .me {
@@ -48,4 +49,12 @@ header {
     border-radius: 50%;
     border: 0.3rem solid var(--color-primary);
     padding: 0.25rem;
+}
+
+@media screen and (max-height: 768px) {
+    .header-socials {
+        padding-top: 5rem;
+
+        transition: all .2s;
+    }
 }
