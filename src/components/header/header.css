@@ -54,7 +54,6 @@ header {
 @media screen and (max-height: 768px) {
     .header-socials {
         padding-top: 5rem;
-
         transition: all .2s;
     }
 }
