@@ -1,14 +1,7 @@
-header {
-    height: 100vh;
-    overflow: hidden;
-}
-
 .header-container {
     text-align: center;
     position: relative;
     
-    height: 100vh;
-
     padding-top: 7rem;
 }
 
@@ -21,7 +14,7 @@ header {
     
     left: 0;
     bottom: 0;
-    padding-top: 10rem;
+    padding-top: 5rem;
 
     font-size: 1.5rem;
     transition: all .2s;
@@ -48,6 +41,10 @@ header {
     border-radius: 50%;
     border: 0.3rem solid var(--color-primary);
     padding: 0.25rem;
+}
+
+.video {
+    margin-top: 5rem;
 }
 
 @media screen and (max-height: 768px) {
