@@ -44,8 +44,25 @@
 }
 
 .video {
+    position: relative;
+    width: 66rem;
+    height: 39rem;
+    overflow: hidden;
+    padding-top: 56.25%;
     margin: 5rem 5rem;
 }
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* width="660" height="390"  */
 
 @media screen and (max-height: 768px) {
     .header-socials {
